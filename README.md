@@ -9,6 +9,7 @@ Connect locally to the Discord client using IPC for a subset of RPC features lik
 # What was changed compared to the original DiscordRPC
 
 - Changed org.json to google gson library
+- Changed logger from slf4j to log4j2
 - Fixed bugs
 
 # Features
