@@ -357,8 +357,6 @@ public final class IPCClient implements Closeable
                 {
                     JsonObject json = p.getJson();
 
-                    LOGGER.debug(" READ | " + json.toString());
-
                     Event event = Event.of(json.has("evt") ? json.get("evt").getAsString() : null);
                     String nonce = json.has("nonce") ? json.get("nonce").getAsString() : null;
 
