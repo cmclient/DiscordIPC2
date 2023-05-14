@@ -1,7 +1,5 @@
 [license]: https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg
-
-[ ![version][] ][download]
-[ ![license][] ](https://github.com/jagrosh/DiscordIPC/tree/master/LICENSE)
+[ ![license][] ](https://github.com/cmclient/DiscordIPC2/blob/master/LICENSE)
 
 # DiscordIPC 2.0
 Based on: https://github.com/jagrosh/DiscordIPC/blob/master/README.md
