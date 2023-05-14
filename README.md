@@ -20,4 +20,4 @@ Connect locally to the Discord client using IPC for a subset of RPC features lik
 
 # Example
 
-- Check [this](https://github.com/cmclient/DiscordIPC2/blob/master/src/main/java/com/jagrosh/discordipc/IPCTest.java)
+- Check [this](https://github.com/cmclient/DiscordIPC2/blob/master/src/main/java/com/jagrosh/discordipc/IPCTest.java) example with rich presence, join, spectate, party 
