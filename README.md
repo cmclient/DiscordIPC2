@@ -2,7 +2,7 @@
 [ ![license][] ](https://github.com/cmclient/DiscordIPC2/blob/master/LICENSE)
 
 # DiscordIPC 2.0
-Based on: https://github.com/jagrosh/DiscordIPC/blob/master/README.md
+Based on: https://github.com/jagrosh/DiscordIPC
 
 Connect locally to the Discord client using IPC for a subset of RPC features like Rich Presence and Activity Join/Spectate
 
