@@ -23,7 +23,6 @@ import com.jagrosh.discordipc.IPCClient;
 import com.jagrosh.discordipc.entities.Callback;
 import com.jagrosh.discordipc.entities.Packet;
 import com.jagrosh.discordipc.entities.serialize.PacketDeserializer;
-import com.jagrosh.discordipc.exceptions.NoDiscordClientException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,12 +38,13 @@ public class WindowsPipe extends Pipe
 
     private final RandomAccessFile file;
 
-    WindowsPipe(IPCClient ipcClient, HashMap<String, Callback> callbacks, String location) throws NoDiscordClientException {
+    WindowsPipe(IPCClient ipcClient, HashMap<String, Callback> callbacks, String location)
+    {
         super(ipcClient, callbacks);
         try {
             this.file = new RandomAccessFile(location, "rw");
         } catch (FileNotFoundException e) {
-            throw new NoDiscordClientException();
+            throw new RuntimeException(e);
         }
     }
 

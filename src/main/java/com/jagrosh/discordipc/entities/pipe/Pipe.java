@@ -101,7 +101,7 @@ public abstract class Pipe {
                 pipe.build = null;
                 pipe = null;
             }
-            catch(IOException  ex)
+            catch(Exception ex)
             {
                 pipe = null;
             }
@@ -163,7 +163,7 @@ public abstract class Pipe {
         return pipe;
     }
 
-    private static Pipe createPipe(IPCClient ipcClient, HashMap<String, Callback> callbacks, String location) throws NoDiscordClientException {
+    private static Pipe createPipe(IPCClient ipcClient, HashMap<String, Callback> callbacks, String location) {
         String osName = System.getProperty("os.name").toLowerCase();
 
         if (osName.contains("win"))
