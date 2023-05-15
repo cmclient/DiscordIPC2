@@ -141,7 +141,7 @@ public abstract class Pipe {
                 throw new NoDiscordClientException();
             }
         }
-        // close unused files, except skip 'any' because its always a duplicate
+        // close unused files, except skip 'any' because it's always a duplicate
         for(int i = 0; i < open.length; i++)
         {
             if(i == DiscordBuild.ANY.ordinal())
@@ -150,7 +150,7 @@ public abstract class Pipe {
             {
                 try {
                     open[i].close();
-                } catch(IOException ex) {
+                } catch(Exception ex) {
                     // This isn't really important to applications and better
                     // as debug info
                     LOGGER.debug("Failed to close an open IPC pipe!", ex);
